@@ -1,3 +1,18 @@
+/* Color Theme Swatches in Hex */
+.contenedorHeader a {
+  font-family: "poppins";
+  text-align: center;
+  font-size: 18px;
+  color: #22A2F2;
+  list-style: none;
+}
+.contenedorHeader a:hover {
+  width: 0;
+  height: 4px;
+  background-color: cadetblue;
+  transition: all 0.5s;
+}
+
 .zoom {
   box-sizing: content-box;
   overflow: hidden;
@@ -77,17 +92,8 @@
 
 .contenedorHeader a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: #f3eded;
   font-size: 18px;
   letter-spacing: 0.5px;
-}
-
-.contenedorHeader a:hover {
-  width: 0;
-  height: 4px;
-  background-color: cadetblue;
-  transition: all 0.5s;
 }
 
 .mainFlex {

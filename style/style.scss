@@ -1,3 +1,13 @@
+@import "colores";
+@import "texto";
+
+
+
+
+
+
+
+
 .zoom{ 
     
   box-sizing: content-box;  
@@ -87,23 +97,15 @@ grid-area: section;
     justify-content: space-evenly;
 }
 
-.contenedorHeader a{
+ .contenedorHeader a{
 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #f3eded;
     font-size: 18px;
     letter-spacing: 0.5px;
 
 }
 
- .contenedorHeader a:hover{
 
-    width: 0;
-    height: 4px;
-    background-color: cadetblue;
-    transition: all .5s;
-}
 .mainFlex{
     
     height:100% ;

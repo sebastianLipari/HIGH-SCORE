@@ -1,0 +1,20 @@
+@mixin text ($align,$size,$color,$fuente) {
+    font-family: $fuente;
+    text-align: $align;
+    font-size: $size;
+    color: $color;
+    list-style: none;
+
+}
+
+.contenedorHeader a{
+   @include text(center,18px , $colorCieloPastel ,'poppins' );
+  &:hover{
+
+    width: 0;
+    height: 4px;
+    background-color: cadetblue;
+    transition: all .5s;
+}
+
+}     
