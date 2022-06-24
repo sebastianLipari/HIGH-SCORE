@@ -13,9 +13,28 @@
   transition: all 0.5s;
 }
 
+.evento3 {
+  text-align: right;
+}
+
+.evento4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.mainNews {
+  color: #1B8EF2;
+}
+
+.mainNewsfifa {
+  font-size: 15px;
+}
+
+.mainNewstop5 {
+  background-color: rgb(172, 20, 20);
+}
+
 .zoom {
   box-sizing: content-box;
-  overflow: hidden;
 }
 .zoom:hover {
   transform: scale(1.1);
@@ -116,7 +135,7 @@
   transition: all 0.5s;
 }
 
-.evento1 a {
+.evento1 a, .evento2 a, .evento3 a, .evento4 a {
   text-decoration: none;
 }
 
@@ -163,13 +182,13 @@ img {
   width: 30%;
 }
 
-.evento1 {
+.evento1, .evento2, .evento3, .evento4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.evento1 p {
+.evento1 p, .evento2 p, .evento3 p, .evento4 p {
   font-size: x-large;
   font-weight: bolder;
 }

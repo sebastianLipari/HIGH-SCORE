@@ -9,8 +9,9 @@
 
 .contenedorHeader a{
    @include text(center,18px , $colorCieloPastel ,'poppins' );
-  &:hover{
-
+  
+  
+   &:hover{
     width: 0;
     height: 4px;
     background-color: cadetblue;
@@ -18,3 +19,49 @@
 }
 
 }     
+
+.evento2{
+
+@extend .evento1;
+
+}
+
+.evento3{
+
+  @extend .evento1;
+  text-align: right;  
+}
+.evento4{
+@extend .evento1;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+$noticiasDestacadas:(
+
+color:$colorCielo,
+font-size: 15px,
+background-color: rgb(172, 20, 20),
+
+);
+
+.mainNews{
+
+color: map-get($map: $noticiasDestacadas, $key: color );
+
+
+
+}
+
+.mainNewsfifa{
+
+font-size: map-get($map: $noticiasDestacadas, $key: font-size );
+
+}
+
+.mainNewstop5{
+
+
+    background-color: map-get($map:$noticiasDestacadas , $key: background-color );
+}
+
