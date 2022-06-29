@@ -9,8 +9,9 @@
 .contenedorHeader a:hover {
   width: 0;
   height: 4px;
-  background-color: cadetblue;
+  background-color: rgb(234, 234, 233);
   transition: all 0.5s;
+  border-radius: 5px;
 }
 
 .evento3 {
@@ -19,18 +20,6 @@
 
 .evento4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.mainNews {
-  color: #1B8EF2;
-}
-
-.mainNewsfifa {
-  font-size: 15px;
-}
-
-.mainNewstop5 {
-  background-color: rgb(172, 20, 20);
 }
 
 .zoom {
@@ -57,8 +46,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-areas: "header header header" "main   main   main " "section section aside " "footer footer footer";
-  grid-template-columns: 30% auto 25%;
-  grid-template-rows: 15% 500px 3fr 20%;
+  grid-template-columns: 30% auto 35%;
+  grid-template-rows: 15% 500px 3fr 30%;
 }
 
 .header {
@@ -81,6 +70,18 @@
   grid-area: footer;
 }
 
+@media (max-width: 768px) {
+  .grilla {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header header" "main main" "section section" "aside aside" "footer footer";
+  }
+
+  .contendidoFooter {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contenedorHeader {
   background-color: rgb(0, 0, 0);
   display: flex;
