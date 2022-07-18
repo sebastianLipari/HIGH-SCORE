@@ -8,16 +8,17 @@
 }
 
 .contenedorHeader a{
-   @include text(center,18px , $colorCieloPastel ,'poppins' );
-  
-  
-   &:hover{
-    width: 0;
-    height: 4px;
-    background-color: rgb(234, 234, 233);
-    transition: all .5s;
-    border-radius: 5px;
-}
+  @include text(center,18px , $ColorCieloCLaro ,'poppins' );
+ 
+ 
+  &:hover{
+   width: 0;
+   height: 4px;
+   background-color: rgb(120, 120, 115);
+   transition: all .5s;
+   border-radius: 5px;
+   opacity: 1.9;
+  }
 
 }     
 
@@ -34,7 +35,6 @@
 }
 .evento4{
 @extend .evento1;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
