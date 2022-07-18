@@ -64,61 +64,6 @@ grid-area: section;
 
 
 
-@media (max-width: 768px) {
-    .grilla {
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto auto auto auto auto;
-      grid-template-areas: 
-      "header header"
-       "main main" 
-       "section section" 
-       "aside aside" 
-       "footer footer";
-    }
-
-    .contenedorHeader{
-
-        display: flex;
-        flex-direction: column;
-    }
-
-  
-
-    .mainFlex {
-        display: flex;
-        flex-direction: column;
-    
-
-    }
-
-    .evento1{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 160px;
-    }
-
-     .contendidoFooter {
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-    .contendidoFooter h3{
-
-        font-size: medium;
-    }
-    .contendidoFooter a{
-
-        font-size: small;
-    }
-    .contendidoFooter h4{
-
-        font-size: small;
-    }
-}
 
 
 
@@ -254,7 +199,7 @@ flex-direction: column;
     flex-direction: column;
     width: 80%;
     height: 100%;
-    margin: 0 0 0 125px;
+    margin: 0 0 0 80px;
 }
 
 .evento div{
@@ -298,7 +243,7 @@ align-items: center;
 
 .evento4 img{
 
-width: 15%;
+ width: 15%;
 
 }
 .itemAside h3{
@@ -353,9 +298,6 @@ footer{
     color: white;
     text-decoration: none;
 }
-
-
-/* FORM*/
 
 
 .form-register{
@@ -425,3 +367,62 @@ font-size: 16px;
     background-color: cadetblue;
 }
 
+@media (max-width: 768px) {
+    .grilla {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas: 
+      "header header"
+       "main main" 
+       "section section" 
+       "aside aside" 
+       "footer footer";
+    }
+
+    .contenedorHeader{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+
+    .mainFlex {
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+
+    .evento{
+
+        margin: 0 ,0 ,0 ,80px !important;
+    }
+
+    .evento1{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+     .contendidoFooter {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .contendidoFooter h3{
+
+        font-size: medium;
+    }
+    .contendidoFooter a{
+
+        font-size: small;
+    }
+    .contendidoFooter h4{
+
+        font-size: small;
+    }
+}
